@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@myeroad/*": ["./packages/*"],
+      "@eroad/*": ["./packages/*"],
+      "ifta-bundle": ["./bundle"]
+    }
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

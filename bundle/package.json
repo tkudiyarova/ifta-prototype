@@ -1,0 +1,17 @@
+{
+  "version": "1.0.0",
+  "scripts": {
+    "build": "webpack"
+  },
+  "main": "src/index.js",
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.32.1",
+    "webpack-cli": "^3.3.2"
+  },
+  "dependencies": {
+    "re-reduced": "^1.6.7",
+    "redux-saga": "^1.0.2"
+  }
+}
