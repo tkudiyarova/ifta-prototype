@@ -10,7 +10,7 @@
   "scripts": {
     "start": "webpack-dev-server --hot",
     "build": "webpack",
-    "build:uilib": "cd ./node_modules/\\@eroad/ui-library/ && yarn build"
+    "build:uilib": "cd ./node_modules/\\@eroad/ui-library/ && yarn && yarn build"
   },
   "dependencies": {
     "@eroad/ui-library": "git+ssh://git@github.com/eroad/myeroad-ui-library.git#master",
@@ -26,6 +26,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",
+    "@babel/plugin-transform-runtime": "^7.4.4",
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.6",

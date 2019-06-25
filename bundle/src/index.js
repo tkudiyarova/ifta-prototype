@@ -1,20 +1,11 @@
 import React from "react";
-import { createActions, createReducer } from "re-reduced";
-import { toUpper } from "ramda";
-import { takeEvery, call } from "redux-saga/effects";
-import { actions } from "../../../src/actions";
+
 import { BundleContext } from './bundle-context';
 import IftaTable from './components/iftaTable'
+export { actions } from "../../src/actions";
+export { sagaWatcher } from "../../src/sagas";
 
 const namespace = "iftaBundle";
-
-function* setNameSaga() {
-  yield call(console.log, "setNameSaga is triggered");
-}
-
-export function* sagaWatcher() {
-  yield takeEvery(actions.fetchIftaRecords.type, setNameSaga);
-}
 
 const Component = props => {
   const {

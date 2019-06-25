@@ -5,7 +5,6 @@ import { Table } from "@eroad/ui-library";
 import { IFTA_TABLE_COLUMNS } from "../constants"
 import { actions } from "../actions";
 import { getIftaRecords } from "../selectors";
-import IftaTable from 'ifta-bundle/'
 
 export const IftaDashboard = (props) => {
   useEffect(() => {
